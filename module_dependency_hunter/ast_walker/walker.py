@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 """
+@see: https://gist.github.com/lrq3000/6175522
 Copyright (C) 2001-2007 Martin Blais. All Rights Reserved
 Copyright (C) 2010 Bear http://code-bear.com/bearlog/
 Copyright (C) 2013 lrq3000

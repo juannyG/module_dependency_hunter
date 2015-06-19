@@ -28,7 +28,7 @@ def find_imports(start_path):
         modules = parse_python_source(os.path.join(path_dir, path_file))
 
         if modules:
-            print modules
+            print "{0}: {1}".format(os.path.join(path_dir, path_file), modules)
 
     return True
 

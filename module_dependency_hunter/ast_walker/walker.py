@@ -9,7 +9,6 @@ Excerpt from SnakeFood to recursively list all imports of modules using AST pars
 """
 
 import compiler
-from compiler.ast import Discard, Const
 from compiler.visitor import ASTVisitor
 
 __all__ = ['parse_python_source']
@@ -44,8 +43,7 @@ class ImportVisitor(object):
 
     def accept_imports(self):
         """accept imports"""
-        self.modules.extend((m, r, l)
-                            for (m, r, l) in self.recent)
+        self.modules.extend((m, r, l) for (m, r, l) in self.recent)
         self.recent = []
 
     def finalize(self):
